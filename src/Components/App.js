@@ -20,10 +20,10 @@ let Storage = sessionStorage.getItem('lightlvl')
 console.log(Storage)
 if (Storage === null) {
     console.log("init storage")
-    // sessionStorage.setItem('lightlvl', JSON.stringify({
-    //     activeLight: intitialState.lightValues[0],
-    //     numberOfClicks: 0
-    // }))
+    sessionStorage.setItem('lightlvl', JSON.stringify({
+        activeLight: intitialState.lightValues[0],
+        numberOfClicks: 0
+    }))
 }
 Storage = sessionStorage.getItem('lightlvl')
 Storage = JSON.parse(Storage)
